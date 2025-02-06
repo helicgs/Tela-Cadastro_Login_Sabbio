@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        body {
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(180deg, #2A5E41 45%, #45D083);
+            /* text-align: center;   */
+        }
+
+        .box {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #45D083;
+            background-color: rgba(251, 251, 251, 0.082);
+            box-shadow: 1px 2px 15px #0000004c;
+            padding: 10px;
+            border-radius: 20px;
+            width: 25%;
+            text-decoration: none;
+        }
+
+        .p {
+            color: #45D083;
+        }
+
+        a:hover {
+            color: #45D083;
+            text-decoration: none;
+            color: #2a5e41;
+        }
+
+        fieldset {
+            border: 1px solid #45D083;
+            border-radius: 20px;
+        }
+
+        .inputbox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        label {
+            position: absolute;
+            top: 2px;
+            left: 1px;
+            transform: translatey(0px);
+            font-size: 15px;
+            color: #45D083;
+            transition: .25s ease-in-out;
+        }
+
+        .inputUser {
+            width: 98%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #45D083;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        .inputUser:focus~label,
+        .inputUser:valid~label {
+            top: -20px;
+            font-size: 10px;
+        }
+
+        #submit {
+            background: #45D083;
+            width: 98%;
+            border: none;
+            padding: 15px 50px;
+            color: #2a5e41;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: ease ease-in-out25s;
+        }
+
+        #submit:hover {
+            background: #2a5e41;
+            color: #45D083;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+        <form action="">
+            <fieldset>
+
+                <h1>Olá Aluno</h1>
+                <p>Cadastre-se e comece a usar a nossa plataforma on-line</p>
+                <br><br>
+
+                <div class="inputbox">
+                    <input type="text" nome="nome" id="nome" class="inputUser" required>
+                    <label for="nome"><b>Nome:</b></label>
+                </div><br>
+
+                <div class="inputbox">
+                    <input type="text" nome="email" id="email" class="inputUser" required>
+                    <label for="email" class="labalInput"><b>E-mail:</b></label>
+                </div><br>
+
+                <div class="inputbox">
+                    <input type="tel" nome="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labalInput"><b>Telefone:</b></label>
+                </div><br>
+
+                <div class="inputbox">
+                    <input type="text" nome="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labalInput"><b>Cidade:</b></label>
+                </div>
+
+                <p>Já tem uma conta? <a href="login.html"><b>Entre aqui.</b></a></p>
+                <br>
+
+                <input type="submit" nome="submit" id="submit">
+                <br>
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
